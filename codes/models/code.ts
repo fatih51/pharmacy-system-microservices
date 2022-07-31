@@ -2,7 +2,8 @@ import { Schema, model } from "mongoose"
 
 const codeSchema = new Schema({
     code: String,
-    product: [Object]
+    product: [Object],
+    identify: Number,
 });
 
 export default model('Codes', codeSchema);
